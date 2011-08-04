@@ -5,9 +5,9 @@ package entities
 	public class Apple extends VisibleMover
 	{
 		//score
-		public var worth:uint = 10;
+		public var worth:uint = 5;
 		//how much it extends the snake
-		public var foodWorth:uint = 2;
+		public var foodWorth:uint = 4;
 		
 		public function Apple()
 		{

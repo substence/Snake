@@ -1,5 +1,7 @@
 package
 {
+	import com.adobe.viewsource.ViewSource;
+	
 	import entities.Apple;
 	import entities.Snake;
 	
@@ -30,6 +32,8 @@ package
 		
 		public function SnakeGame()
 		{
+			//show source in context number
+			ViewSource.addMenuItem(this, "srcview/index.html", true); 
 			_grid = new Grid(stage);
 			user = new User(stage);
 			_apple = new Apple();

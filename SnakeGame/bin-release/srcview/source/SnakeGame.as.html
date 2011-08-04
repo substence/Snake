@@ -9,6 +9,8 @@
 
 <body><pre><span class="ActionScriptpackage">package</span>
 <span class="ActionScriptBracket/Brace">{</span>
+    <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">com</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">adobe</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">viewsource</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">ViewSource</span>;
+    
     <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">entities</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Apple</span>;
     <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">entities</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">Snake</span>;
     
@@ -39,6 +41,8 @@
         
         <span class="ActionScriptReserved">public</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">SnakeGame</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>
         <span class="ActionScriptBracket/Brace">{</span>
+            <span class="ActionScriptComment">//show source in context number
+</span>            <span class="ActionScriptDefault_Text">ViewSource</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">addMenuItem</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptReserved">this</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptString">"srcview/index.html"</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptReserved">true</span><span class="ActionScriptBracket/Brace">)</span>; 
             <span class="ActionScriptDefault_Text">_grid</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Grid</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">stage</span><span class="ActionScriptBracket/Brace">)</span>;
             <span class="ActionScriptDefault_Text">user</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">User</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">stage</span><span class="ActionScriptBracket/Brace">)</span>;
             <span class="ActionScriptDefault_Text">_apple</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptReserved">new</span> <span class="ActionScriptDefault_Text">Apple</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptBracket/Brace">)</span>;
