@@ -35,7 +35,7 @@ package
 			_apple = new Apple();
 			_ui = new PlayingUI(this);
 			_isPaused = true;
-			stage.addChild(new GridGraphic());
+			stage.addChild(new GridGraphic());	//debug
 			stage.addChild(user.snake.graphic);
 			stage.addChild(_apple.graphic);
 			stage.addChild(_ui);
@@ -45,6 +45,14 @@ package
 			reset();
 			setRandomApplePosition();
 			update();
+		}
+		
+		private function reset():void
+		{
+			user.score = 0;
+			user.snake.length = 0;
+			user.snake.direction = new Point(0, -1);
+			user.snake.position = new Point(stage.stageWidth * .5, stage.stageHeight);
 		}
 		
 		protected function onTitleClick(event:Event):void
@@ -60,14 +68,6 @@ package
 				onSnakeAndAppleCollision(collidee as Apple);
 			else
 				onSnakeAndSnakeCollision();
-		}
-		
-		private function reset():void
-		{
-			user.score = 0;
-			user.snake.length = 0;
-			user.snake.direction = new Point(0, -1);
-			user.snake.position = new Point(stage.stageWidth * .5, stage.stageHeight);
 		}
 		
 		private function onSnakeAndAppleCollision(apple:Apple):void

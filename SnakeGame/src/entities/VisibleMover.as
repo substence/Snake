@@ -12,6 +12,7 @@ package entities
 	
 	import interfaces.ISpatial;
 	
+	//base class for visual objects on the grid
 	public class VisibleMover extends EventDispatcher implements ISpatial
 	{
 		public var position:Point;

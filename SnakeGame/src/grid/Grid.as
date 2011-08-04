@@ -11,6 +11,7 @@ package grid
 	
 	import interfaces.ISpatial;
 	
+	//this should probably be a singleton
 	public class Grid extends EventDispatcher
 	{
 		public static const GRID_SIZE:uint = Config.GRID_CELL_SIZE;
@@ -37,15 +38,6 @@ package grid
 				}
 			}			
 		}
-		
-/*		public static function setNodeOccupant(node:Node, occupant:VisibleMover):void
-		{
-			if (node.occupant == occupant)
-				return;
-			if (node.occupant)
-				occupant.dispatchEvent(new GridCollisionEvent(GridCollisionEvent.COLLIDE, node.occupant, occupant, node));
-			node.occupant = occupant;
-		}*/
 		
 		public static function getNodeAt(x:uint, y:uint):Node
 		{
