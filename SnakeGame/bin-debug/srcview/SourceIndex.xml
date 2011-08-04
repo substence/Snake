@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+	<title>Source of SnakeGame</title>
+	<nodes>
+		<node label="src">
+			<node icon="packageIcon" label="components" expanded="true">
+				<node icon="actionScriptIcon" label="BoundsController.as" url="source/components/BoundsController.as.html"/>
+				<node icon="actionScriptIcon" label="KeyboardMovement.as" url="source/components/KeyboardMovement.as.html"/>
+			</node>
+			<node icon="packageIcon" label="config" expanded="true">
+				<node icon="actionScriptIcon" label="Config.as" url="source/config/Config.as.html"/>
+			</node>
+			<node icon="packageIcon" label="entities" expanded="true">
+				<node icon="actionScriptIcon" label="Apple.as" url="source/entities/Apple.as.html"/>
+				<node icon="actionScriptIcon" label="Snake.as" url="source/entities/Snake.as.html"/>
+				<node icon="actionScriptIcon" label="VisibleMover.as" url="source/entities/VisibleMover.as.html"/>
+			</node>
+			<node icon="packageIcon" label="graphix" expanded="true">
+				<node icon="actionScriptIcon" label="AppleGraphic.as" url="source/graphix/AppleGraphic.as.html"/>
+				<node icon="actionScriptIcon" label="GridGraphic.as" url="source/graphix/GridGraphic.as.html"/>
+				<node icon="actionScriptIcon" label="SnakeGraphic.as" url="source/graphix/SnakeGraphic.as.html"/>
+			</node>
+			<node icon="packageIcon" label="grid" expanded="true">
+				<node icon="actionScriptIcon" label="Grid.as" url="source/grid/Grid.as.html"/>
+				<node icon="actionScriptIcon" label="GridCollisionEvent.as" url="source/grid/GridCollisionEvent.as.html"/>
+				<node icon="actionScriptIcon" label="Node.as" url="source/grid/Node.as.html"/>
+			</node>
+			<node icon="packageIcon" label="interfaces" expanded="true">
+				<node icon="actionScriptIcon" label="ISpatial.as" url="source/interfaces/ISpatial.as.html"/>
+			</node>
+			<node icon="packageIcon" label="ui" expanded="true">
+				<node icon="actionScriptIcon" label="PlayingUI.as" url="source/ui/PlayingUI.as.html"/>
+			</node>
+			<node icon="packageIcon" label="users" expanded="true">
+				<node icon="actionScriptIcon" label="User.as" url="source/users/User.as.html"/>
+			</node>
+			<node icon="mxmlAppIcon" selected="true" label="SnakeGame.as" url="source/SnakeGame.as.html"/>
+		</node>
+	</nodes>
+	<zipfile label="Download source (ZIP, 11K)" url="SnakeGame.zip">
+	</zipfile>
+	<sdklink label="Download Flex SDK" url="http://www.adobe.com/go/flex451_sdk_download">
+	</sdklink>
+</index>
