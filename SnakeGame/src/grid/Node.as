@@ -1,5 +1,7 @@
 package grid
 {
+	import entities.VisibleMover;
+	
 	import interfaces.ISpatial;
 
 	public class Node

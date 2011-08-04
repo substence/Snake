@@ -6,10 +6,10 @@ package graphix
 	
 	public class SnakeGraphic extends Sprite
 	{
-		public function SnakeGraphic(color:uint = 0xFF0000, size:uint = 0,  alpha:Number = 1)
+		public function SnakeGraphic(color:uint = 0x0000FF, size:uint = 0,  alpha:Number = 1)
 		{
 			if (size == 0)
-				size = Grid.SIZE;
+				size = Grid.GRID_SIZE;
 			graphics.beginFill(color);
 			graphics.drawRect(0, 0, size, size);
 			graphics.endFill();

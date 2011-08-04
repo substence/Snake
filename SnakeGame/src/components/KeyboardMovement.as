@@ -46,6 +46,9 @@ package components
 					break;
 				}
 			}
+			//if your desired direction is the opposite of your current direction, ignore you (you cant go backwards)
+			if (direction.equals(new Point(_snake.direction.x * -1, _snake.direction.y * -1)))
+				return;
 			_snake.direction = direction;
 		}
 	}

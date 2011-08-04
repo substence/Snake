@@ -11,7 +11,7 @@ package grid
 		public var collidee:ISpatial;
 		public var node:Node;
 		
-		public function GridCollisionEvent(type:String, collider:ISpatial, collidee:ISpatial, node:Node, bubbles:Boolean=false, cancelable:Boolean=false)
+		public function GridCollisionEvent(type:String, collider:ISpatial, collidee:ISpatial = null, node:Node = null, bubbles:Boolean=false, cancelable:Boolean=false)
 		{
 			this.collidee = collidee;
 			this.collider = collider;
