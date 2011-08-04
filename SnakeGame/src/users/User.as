@@ -18,8 +18,8 @@ package users
 		public var righttKey:uint = Keyboard.RIGHT;
 		public var upKey:uint = Keyboard.UP;
 		public var downKey:uint = Keyboard.DOWN;
-		private var _score:uint = 0;
 		public var snake:Snake;
+		private var _score:uint = 0;
 		
 		public function User(stage:Stage)
 		{

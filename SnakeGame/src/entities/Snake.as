@@ -79,15 +79,16 @@ package entities
 		
 		private function updateTrail():void
 		{
+			//I only need to modify the trail if my new node isnt the same as my last node
 			if (trail.length > 0 && _node == trail[trail.length - 1].node)
 				return;
 			var snake:Snake;
-			//if there aren't enough shadows in the pool, make a new one
+			//if there aren't enough nodes in the trail, add a new one
 			if (length > trail.length)
 			{
 				snake = addTrailNode();
 			}
-			//else take the last shadow and move it right behind the snake
+			//else take the last node and move it right behind the snake
 			else if (trail.length > 0)
 			{
 				snake = trail.shift();

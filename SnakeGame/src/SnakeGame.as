@@ -18,6 +18,7 @@ package
 	
 	import users.User;
 	
+	[SWF(width="800", height="600")]
 	public class SnakeGame extends Sprite
 	{
 		public static const GAME_OVER:String = "gameOver";
@@ -26,7 +27,6 @@ package
 		private var _ui:PlayingUI;
 		private var _apple:Apple;
 		private var _isPaused:Boolean;
-		private var _gridGraphic:GridGraphic;
 		
 		public function SnakeGame()
 		{
@@ -35,8 +35,7 @@ package
 			_apple = new Apple();
 			_ui = new PlayingUI(this);
 			_isPaused = true;
-			_gridGraphic = new GridGraphic();
-			stage.addChild(_gridGraphic);
+			stage.addChild(new GridGraphic());
 			stage.addChild(user.snake.graphic);
 			stage.addChild(_apple.graphic);
 			stage.addChild(_ui);
@@ -100,7 +99,6 @@ package
 		{
 			user.update();
 			_apple.update();
-			_gridGraphic.update();
 		}
 	}
 }
