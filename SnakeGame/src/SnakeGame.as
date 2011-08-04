@@ -32,7 +32,7 @@ package
 		
 		public function SnakeGame()
 		{
-			//show source in context number
+			//show source in context menu
 			ViewSource.addMenuItem(this, "srcview/index.html", true); 
 			_grid = new Grid(stage);
 			user = new User(stage);
