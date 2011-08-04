@@ -20,7 +20,8 @@
     
     <span class="ActionScriptReserved">import</span> <span class="ActionScriptDefault_Text">interfaces</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">ISpatial</span>;
     
-    <span class="ActionScriptReserved">public</span> <span class="ActionScriptclass">class</span> <span class="ActionScriptDefault_Text">Grid</span> <span class="ActionScriptReserved">extends</span> <span class="ActionScriptDefault_Text">EventDispatcher</span>
+    <span class="ActionScriptComment">//this should probably be a singleton
+</span>    <span class="ActionScriptReserved">public</span> <span class="ActionScriptclass">class</span> <span class="ActionScriptDefault_Text">Grid</span> <span class="ActionScriptReserved">extends</span> <span class="ActionScriptDefault_Text">EventDispatcher</span>
     <span class="ActionScriptBracket/Brace">{</span>
         <span class="ActionScriptReserved">public</span> <span class="ActionScriptReserved">static</span> <span class="ActionScriptReserved">const</span> <span class="ActionScriptDefault_Text">GRID_SIZE</span>:<span class="ActionScriptDefault_Text">uint</span> <span class="ActionScriptOperator">=</span> <span class="ActionScriptDefault_Text">Config</span><span class="ActionScriptOperator">.</span><span class="ActionScriptDefault_Text">GRID_CELL_SIZE</span>;
         <span class="ActionScriptReserved">public</span> <span class="ActionScriptReserved">static</span> <span class="ActionScriptvar">var</span> <span class="ActionScriptDefault_Text">columns</span>:<span class="ActionScriptDefault_Text">uint</span> <span class="ActionScriptOperator">=</span> 20;
@@ -46,15 +47,6 @@
                 <span class="ActionScriptBracket/Brace">}</span>
             <span class="ActionScriptBracket/Brace">}</span>            
         <span class="ActionScriptBracket/Brace">}</span>
-        
-<span class="ActionScriptComment">/*        public static function setNodeOccupant(node:Node, occupant:VisibleMover):void
-        {
-            if (node.occupant == occupant)
-                return;
-            if (node.occupant)
-                occupant.dispatchEvent(new GridCollisionEvent(GridCollisionEvent.COLLIDE, node.occupant, occupant, node));
-            node.occupant = occupant;
-        }*/</span>
         
         <span class="ActionScriptReserved">public</span> <span class="ActionScriptReserved">static</span> <span class="ActionScriptfunction">function</span> <span class="ActionScriptDefault_Text">getNodeAt</span><span class="ActionScriptBracket/Brace">(</span><span class="ActionScriptDefault_Text">x</span>:<span class="ActionScriptDefault_Text">uint</span><span class="ActionScriptOperator">,</span> <span class="ActionScriptDefault_Text">y</span>:<span class="ActionScriptDefault_Text">uint</span><span class="ActionScriptBracket/Brace">)</span>:<span class="ActionScriptDefault_Text">Node</span>
         <span class="ActionScriptBracket/Brace">{</span>
